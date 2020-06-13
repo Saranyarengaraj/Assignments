@@ -1,0 +1,24 @@
+package day2;
+
+public class toreverseevenpositionwords {
+
+	public static void main(String[] args) {
+		String A = "I am a software tester";
+		String rev = "";
+		String[] even = A.split(" ");
+		for ( int i=0; i<even.length; i++) {
+			if(i%2==1) {
+				char[] new1 = even[i].toCharArray();
+				for(int j= new1.length; j>0; j--) {
+				rev = rev + new1[j-1];
+			}
+			System.out.println(rev);				
+		}
+		else {
+
+			System.out.println(even[i]);
+		}
+		
+		}
+		}
+}
